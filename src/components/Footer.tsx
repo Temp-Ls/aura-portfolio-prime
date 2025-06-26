@@ -1,12 +1,13 @@
 
+import { Github, Linkedin, Mail } from 'lucide-react';
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   const socialLinks = [
-    { name: "GitHub", url: "#" },
-    { name: "LinkedIn", url: "#" },
-    { name: "Twitter", url: "#" },
-    { name: "Dribbble", url: "#" },
+    { name: "GitHub", url: "#", icon: Github },
+    { name: "LinkedIn", url: "#", icon: Linkedin },
+    { name: "Email", url: "mailto:lokesh.singh@example.com", icon: Mail },
   ];
 
   return (
@@ -14,10 +15,10 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-2xl font-bold gradient-text mb-4">Alex Morgan</h3>
+            <h3 className="text-2xl font-bold gradient-text mb-4">Lokesh Singh</h3>
             <p className="text-foreground/80 leading-relaxed">
-              Full Stack Developer passionate about creating digital experiences 
-              that make a difference. Always learning, always building.
+              Full-Stack Developer & ML Enthusiast passionate about transforming 
+              ideas into scalable digital solutions. Always learning, always building.
             </p>
           </div>
           
@@ -27,30 +28,32 @@ const Footer = () => {
               <li><a href="#about" className="text-foreground/80 hover:text-primary transition-colors">About</a></li>
               <li><a href="#projects" className="text-foreground/80 hover:text-primary transition-colors">Projects</a></li>
               <li><a href="#skills" className="text-foreground/80 hover:text-primary transition-colors">Skills</a></li>
+              <li><a href="#achievements" className="text-foreground/80 hover:text-primary transition-colors">Achievements</a></li>
+              <li><a href="#experience" className="text-foreground/80 hover:text-primary transition-colors">Experience</a></li>
               <li><a href="#contact" className="text-foreground/80 hover:text-primary transition-colors">Contact</a></li>
             </ul>
           </div>
           
           <div>
             <h4 className="font-semibold mb-4 text-primary">Connect</h4>
-            <ul className="space-y-2">
+            <div className="flex space-x-4">
               {socialLinks.map((link) => (
-                <li key={link.name}>
-                  <a 
-                    href={link.url} 
-                    className="text-foreground/80 hover:text-primary transition-colors"
-                  >
-                    {link.name}
-                  </a>
-                </li>
+                <a 
+                  key={link.name}
+                  href={link.url} 
+                  className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200"
+                  title={link.name}
+                >
+                  <link.icon size={18} />
+                </a>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
         
         <div className="border-t border-border/30 mt-8 pt-8 text-center">
           <p className="text-foreground/60">
-            © {currentYear} Alex Morgan. All rights reserved.
+            © {currentYear} Lokesh Singh. All rights reserved.
           </p>
         </div>
       </div>

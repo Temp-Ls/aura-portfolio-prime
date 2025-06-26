@@ -11,25 +11,33 @@ const Hero = () => {
         <div className="animate-fade-in">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             Hi, I'm{' '}
-            <span className="gradient-text">Alex Morgan</span>
+            <span className="gradient-text">Lokesh Singh</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-foreground/80 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in animation-delay-200">
-            Full Stack Developer & Designer crafting digital experiences that blend 
-            <span className="text-primary font-medium"> beautiful design</span> with 
-            <span className="text-primary font-medium"> powerful functionality</span>
+          <p className="text-xl md:text-2xl text-foreground/80 mb-4 max-w-3xl mx-auto leading-relaxed animate-fade-in animation-delay-200">
+            Full-Stack Developer & 
+            <span className="text-primary font-medium"> ML Enthusiast</span>
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in animation-delay-400">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full">
-              View My Work
+          <p className="text-lg md:text-xl text-foreground/70 mb-8 max-w-2xl mx-auto animate-fade-in animation-delay-400">
+            "Transforming ideas into scalable digital solutions."
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in animation-delay-600">
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Let's Connect
             </Button>
             <Button 
               variant="outline" 
               size="lg" 
               className="border-border hover:bg-accent px-8 py-3 rounded-full"
+              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Get In Touch
+              View My Work
             </Button>
           </div>
         </div>

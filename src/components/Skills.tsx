@@ -2,30 +2,39 @@
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend Development",
+      title: "Programming Languages",
       skills: [
-        { name: "React", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "Next.js", level: 85 },
-        { name: "Tailwind CSS", level: 92 },
+        { name: "Python", level: 95 },
+        { name: "JavaScript", level: 90 },
+        { name: "Java", level: 85 },
+        { name: "C/C++", level: 88 },
       ]
     },
     {
-      title: "Backend Development",
+      title: "Frameworks & Libraries",
       skills: [
+        { name: "React.js", level: 92 },
         { name: "Node.js", level: 88 },
-        { name: "Python", level: 82 },
-        { name: "PostgreSQL", level: 85 },
-        { name: "MongoDB", level: 80 },
+        { name: "Express.js", level: 85 },
+        { name: "Django", level: 82 },
       ]
     },
     {
-      title: "Tools & Technologies",
+      title: "Databases & Tools",
       skills: [
-        { name: "AWS", level: 78 },
-        { name: "Docker", level: 75 },
-        { name: "Git", level: 95 },
-        { name: "Figma", level: 85 },
+        { name: "MongoDB", level: 85 },
+        { name: "PostgreSQL", level: 80 },
+        { name: "MySQL", level: 78 },
+        { name: "Tailwind CSS", level: 90 },
+      ]
+    },
+    {
+      title: "Specialized Technologies",
+      skills: [
+        { name: "OpenCV", level: 80 },
+        { name: "Socket.IO", level: 85 },
+        { name: "JWT", level: 82 },
+        { name: "Arduino", level: 75 },
       ]
     }
   ];
@@ -35,14 +44,14 @@ const Skills = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text">
-            Skills & Expertise
+            Skills & Technologies
           </h2>
           <p className="text-foreground/80 text-lg max-w-2xl mx-auto">
-            A comprehensive overview of my technical skills and proficiency levels
+            A comprehensive overview of my technical expertise and proficiency levels
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {skillCategories.map((category, categoryIndex) => (
             <div 
               key={category.title}

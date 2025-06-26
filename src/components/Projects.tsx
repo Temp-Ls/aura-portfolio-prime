@@ -4,24 +4,38 @@ import { Button } from '@/components/ui/button';
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A modern e-commerce solution built with React, Node.js, and MongoDB. Features include real-time inventory management, payment processing, and admin dashboard.",
-      tech: ["React", "Node.js", "MongoDB", "Stripe"],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+      title: "Chatify",
+      description: "A real-time chat application built with Socket.IO, featuring instant messaging, user authentication, and responsive design. Supports multiple chat rooms and online status indicators.",
+      tech: ["React.js", "Node.js", "Socket.IO", "MongoDB"],
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
       link: "#",
     },
     {
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates, team collaboration features, and advanced analytics dashboard.",
-      tech: ["Next.js", "TypeScript", "PostgreSQL", "Socket.io"],
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop",
+      title: "Saraswati Quiz Platform",
+      description: "An intelligent quiz platform with adaptive questioning, real-time scoring, and comprehensive analytics. Features role-based access for students and educators.",
+      tech: ["React.js", "Django", "PostgreSQL", "JWT"],
+      image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&h=400&fit=crop",
       link: "#",
     },
     {
-      title: "AI-Powered Analytics",
-      description: "Machine learning dashboard that provides intelligent insights and predictive analytics for business data visualization.",
-      tech: ["Python", "React", "TensorFlow", "AWS"],
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop",
+      title: "Face Tracking System",
+      description: "Computer vision project using OpenCV for real-time face detection and tracking, integrated with Arduino for hardware control and automation responses.",
+      tech: ["Python", "OpenCV", "Arduino", "Computer Vision"],
+      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop",
+      link: "#",
+    },
+    {
+      title: "Admin Dashboard System",
+      description: "Comprehensive admin dashboard with role-based access control, data visualization, and secure API endpoints. Built during internship at Graphic Era Hill University.",
+      tech: ["Django", "React.js", "PostgreSQL", "RESTful APIs"],
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+      link: "#",
+    },
+    {
+      title: "Section Allocation System",
+      description: "Automated system for efficient student section allocation based on multiple criteria, featuring conflict resolution and optimization algorithms.",
+      tech: ["Python", "Django", "MySQL", "Algorithm Design"],
+      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop",
       link: "#",
     },
   ];
@@ -59,7 +73,7 @@ const Projects = () => {
                 <h3 className="text-xl font-semibold mb-3 text-primary">
                   {project.title}
                 </h3>
-                <p className="text-foreground/80 mb-4 leading-relaxed">
+                <p className="text-foreground/80 mb-4 leading-relaxed text-sm">
                   {project.description}
                 </p>
                 
@@ -67,7 +81,7 @@ const Projects = () => {
                   {project.tech.map((tech) => (
                     <span 
                       key={tech}
-                      className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+                      className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full"
                     >
                       {tech}
                     </span>

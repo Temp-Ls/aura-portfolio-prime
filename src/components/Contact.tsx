@@ -1,5 +1,6 @@
 
 import { Button } from '@/components/ui/button';
+import { Mail, Github, Linkedin } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -11,7 +12,7 @@ const Contact = () => {
           </h2>
           <p className="text-foreground/80 text-lg max-w-2xl mx-auto">
             Ready to bring your ideas to life? I'm always excited to discuss new 
-            projects and opportunities
+            projects and opportunities. Let's connect and create something amazing!
           </p>
         </div>
 
@@ -21,37 +22,44 @@ const Contact = () => {
               Get In Touch
             </h3>
             
-            <div className="space-y-6">
+            <div className="space-y-6 mb-8">
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-semibold">@</span>
+                  <Mail className="text-primary" size={20} />
                 </div>
                 <div>
                   <p className="font-medium">Email</p>
-                  <p className="text-foreground/80">alex@example.com</p>
+                  <p className="text-foreground/80">lokesh.singh@example.com</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-semibold">📱</span>
+                  <Linkedin className="text-primary" size={20} />
                 </div>
                 <div>
-                  <p className="font-medium">Phone</p>
-                  <p className="text-foreground/80">+1 (555) 123-4567</p>
+                  <p className="font-medium">LinkedIn</p>
+                  <p className="text-foreground/80">linkedin.com/in/lokeshsingh</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-semibold">📍</span>
+                  <Github className="text-primary" size={20} />
                 </div>
                 <div>
-                  <p className="font-medium">Location</p>
-                  <p className="text-foreground/80">San Francisco, CA</p>
+                  <p className="font-medium">GitHub</p>
+                  <p className="text-foreground/80">github.com/lokeshsingh</p>
                 </div>
               </div>
             </div>
+
+            <Button 
+              variant="outline"
+              className="border-primary/30 hover:bg-primary/10 mb-4"
+            >
+              Download CV
+            </Button>
           </div>
 
           <div className="animate-fade-in-right">
@@ -71,6 +79,15 @@ const Contact = () => {
                   type="email" 
                   className="w-full px-4 py-3 bg-background/50 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
                   placeholder="your@email.com"
+                />
+              </div>
+              
+              <div>
+                <label className="block text-sm font-medium mb-2">Subject</label>
+                <input 
+                  type="text" 
+                  className="w-full px-4 py-3 bg-background/50 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
+                  placeholder="Project inquiry"
                 />
               </div>
               

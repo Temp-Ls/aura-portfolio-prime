@@ -10,45 +10,37 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-foreground/80 leading-relaxed">
               <p>
-                I'm a passionate full-stack developer with over 5 years of experience 
-                creating digital solutions that make a difference. My journey began with 
-                a curiosity for how things work, which led me to explore the intersection 
-                of design and technology.
+                I'm Lokesh Singh, a B.Tech student specializing in Computer Science, 
+                passionate about building scalable web apps and intelligent systems. 
+                I have experience with the full MERN stack and have worked on real-world 
+                projects involving admin dashboards, chat apps, and machine learning tools.
               </p>
               <p>
-                I specialize in building modern web applications using cutting-edge 
-                technologies like React, Node.js, and cloud platforms. My approach 
-                combines technical expertise with creative problem-solving to deliver 
-                solutions that are both beautiful and functional.
+                I've been selected for elite programs like Amazon ML Summer School and 
+                Microsoft SEFA 2024, and consistently rank in the top tier of coding 
+                platforms like LeetCode and Codeforces.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies, 
-                contributing to open source projects, or sharing knowledge with the 
-                developer community through blog posts and speaking engagements.
+                I love turning ideas into reliable digital products and mentoring others 
+                through my college's coding club, always striving to create solutions 
+                that make a meaningful impact.
               </p>
             </div>
           </div>
           
           <div className="animate-fade-in-right">
             <div className="glass-card p-8 rounded-2xl">
-              <h3 className="text-xl font-semibold mb-6 text-primary">Quick Facts</h3>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center py-2 border-b border-border/30">
-                  <span className="text-foreground/80">Location</span>
-                  <span className="font-medium">San Francisco, CA</span>
-                </div>
-                <div className="flex justify-between items-center py-2 border-b border-border/30">
-                  <span className="text-foreground/80">Experience</span>
-                  <span className="font-medium">5+ Years</span>
-                </div>
-                <div className="flex justify-between items-center py-2 border-b border-border/30">
-                  <span className="text-foreground/80">Projects Completed</span>
-                  <span className="font-medium">50+</span>
-                </div>
-                <div className="flex justify-between items-center py-2">
-                  <span className="text-foreground/80">Availability</span>
-                  <span className="font-medium text-green-400">Open to Work</span>
-                </div>
+              <div className="w-48 h-48 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+                <img 
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" 
+                  alt="Lokesh Singh"
+                  className="w-40 h-40 rounded-full object-cover"
+                />
+              </div>
+              <div className="text-center space-y-2">
+                <h3 className="text-xl font-semibold text-primary">Lokesh Singh</h3>
+                <p className="text-foreground/70">Full-Stack Developer & ML Enthusiast</p>
+                <p className="text-sm text-foreground/60">B.Tech Computer Science</p>
               </div>
             </div>
           </div>

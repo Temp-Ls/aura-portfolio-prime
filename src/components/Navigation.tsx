@@ -18,8 +18,10 @@ const Navigation = () => {
   const navItems = [
     { href: '#home', label: 'Home' },
     { href: '#about', label: 'About' },
-    { href: '#projects', label: 'Projects' },
     { href: '#skills', label: 'Skills' },
+    { href: '#projects', label: 'Projects' },
+    { href: '#achievements', label: 'Achievements' },
+    { href: '#experience', label: 'Experience' },
     { href: '#contact', label: 'Contact' },
   ];
 
@@ -30,7 +32,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <span className="text-2xl font-bold gradient-text">AM</span>
+            <span className="text-2xl font-bold gradient-text">LS</span>
           </div>
 
           {/* Desktop Navigation */}
